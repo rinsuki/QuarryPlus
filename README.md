@@ -1,3 +1,17 @@
+# Quarry Plus rinsuki modified version
+
+QuarryPlus に、 @rinsuki が改変を加えたバージョンです。
+
+## 改変内容
+
+オリジナルのQuarryPlusに、以下の機能を追加しています。
+
+- TODO: ここにかく
+
+以下、オリジナルのREADME
+
+-----
+
 Quarry Plus
 ===========
 
