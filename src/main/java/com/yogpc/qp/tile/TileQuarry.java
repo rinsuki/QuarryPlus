@@ -442,8 +442,10 @@ public class TileQuarry extends TileBasic {
   }
 
   private void S_setBreakableFrame(final int x, final int y, final int z) {
-    if (this.worldObj.getBlock(x, y, z) == QuarryPlusI.blockFrame)
+    if (this.worldObj.getBlock(x, y, z) == QuarryPlusI.blockFrame) {
       this.worldObj.setBlockMetadataWithNotify(x, y, z, 1, 3);
+      this.worldObj.setBlockToAir(x, y, z);
+    }
   }
 
   private boolean S_moveHead() {

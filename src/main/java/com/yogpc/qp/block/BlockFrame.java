@@ -36,8 +36,7 @@ public class BlockFrame extends Block {
     if (world.isRemote)
       return;
     final int meta = world.getBlockMetadata(i, j, k);
-    if (meta != 0 && random.nextInt(10) > 5)
-      world.setBlockToAir(i, j, k);
+    if (meta != 0) world.setBlockToAir(i, j, k);
   }
 
   public void setSides(final boolean yn, final boolean yp, final boolean zn, final boolean zp,
