@@ -334,28 +334,29 @@ public class TileQuarry extends TileBasic {
                 final ForgeDirection o =
                     ForgeDirection.values()[this.worldObj.getBlockMetadata(this.xCoord,
                         this.yCoord, this.zCoord)].getOpposite();
+                final int size = 64 + 2 /* frame */;
                 switch (o) {
                   case EAST:
                     this.xMin = this.xCoord + 1;
-                    this.zMin = this.zCoord - 5;
+                    this.zMin = this.zCoord;
                     break;
                   case WEST:
-                    this.xMin = this.xCoord - 11;
-                    this.zMin = this.zCoord - 5;
+                    this.xMin = this.xCoord - size - 1;
+                    this.zMin = this.zCoord - size;
                     break;
                   case SOUTH:
-                    this.xMin = this.xCoord - 5;
+                    this.xMin = this.xCoord - size;
                     this.zMin = this.zCoord + 1;
                     break;
                   case NORTH:
                   default:
-                    this.xMin = this.xCoord - 5;
-                    this.zMin = this.zCoord - 11;
+                    this.xMin = this.xCoord;
+                    this.zMin = this.zCoord - size - 1;
                     break;
                 }
                 this.yMin = this.yCoord;
-                this.xMax = this.xMin + 10;
-                this.zMax = this.zMin + 10;
+                this.xMax = this.xMin + size;
+                this.zMax = this.zMin + size;
                 this.yMax = this.yCoord + 4;
               }
   }
