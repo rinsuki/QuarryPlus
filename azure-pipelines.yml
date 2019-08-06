@@ -21,4 +21,4 @@ steps:
 - script: |
     java -jar ../ForgeBuilder/target/ForgeBuilder-*.jar .
   displayName: 'Build QuarryPlus'
-- publish: 'target/*/*.jar'
+- publish: 'target'
