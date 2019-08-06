@@ -504,7 +504,7 @@ public class TilePump extends APacketTile implements IFluidHandler, IEnchantable
         for (bx = 0; bx < this.block_side_x; bx++)
           for (bz = 0; bz < this.block_side_z; bz++)
             if ((this.blocks[this.py - this.yOffset][bx][bz] & 0x40) != 0)
-              drainBlock(bx, bz, QuarryPlusI.blockFrame);
+              drainBlock(bx, bz, Blocks.glass);
       } else
         for (bz = 0; bz < this.block_side_z; bz++)
           if (this.blocks[this.py - this.yOffset][this.px][bz] != 0)
